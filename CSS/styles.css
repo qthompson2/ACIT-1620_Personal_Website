@@ -1,0 +1,23 @@
+body {
+    background-color: black;
+    color: white;
+}
+
+header {
+    text-align: center;
+}
+
+section {
+    border: 5px double white;
+    margin-bottom: 5%;
+}
+
+article {
+    border: 2.6px solid white;
+    margin: 1%;
+}
+
+.galleryPhoto {
+    text-align: center;
+    align-items: center;
+}
