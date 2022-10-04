@@ -7,6 +7,10 @@ header {
     text-align: center;
 }
 
+.indexH1 {
+    font-family: Montserrat, serif;
+}
+
 section {
     border: 5px double white;
     margin-bottom: 5%;
