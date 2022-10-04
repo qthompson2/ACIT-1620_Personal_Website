@@ -10,6 +10,7 @@ header {
 section {
     border: 5px double white;
     margin-bottom: 5%;
+    padding: 10px;
 }
 
 article {
@@ -20,4 +21,11 @@ article {
 .galleryPhoto {
     text-align: center;
     align-items: center;
+}
+
+nav {
+    text-align: center;
+    background-color: lightblue;
+    border: ridge 10px brown;
+    margin: 10px;
 }
