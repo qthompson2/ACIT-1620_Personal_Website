@@ -33,3 +33,8 @@ nav {
     border: ridge 10px brown;
     margin: 10px;
 }
+
+ul {
+    display: inline-block;
+    text-align: left;
+}
