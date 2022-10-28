@@ -1,80 +1,24 @@
-body {
-    background-color: black;
-    color: white;
-}
-
-header {
-    text-align: center;
-}
-
-.indexH1 {
+.montserrat {
     font-family: Montserrat, serif;
 }
 
-section {
-    border: 5px double white;
-    margin-bottom: 5%;
-    padding: 10px;
+body{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: #edddd0;
 }
 
-article {
-    border: 2.6px solid white;
-    margin: 1%;
-}
-
-.galleryPhoto {
-    text-align: center;
-    align-items: center;
-}
-
-nav {
-    text-align: center;
-    background-color: lightblue;
-    border: ridge 10px brown;
-    margin: 10px;
+header {
+    background-color: #a6cad4;
+    grid-column: 1 / 4;
 }
 
 ul {
-    display: inline-block;
-    text-align: left;
+    display: flex;
+    list-style: none;
+    justify-content:space-evenly;
 }
 
-a:link {
-    color: #FF52AE;
-}
-
-a:visited {
-    color: gold;
-}
-
-a:hover {
-    animation-name: linkHover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes linkHover {
-    0% {color: #FF52AE;}
-    50% {color: gold;}
-    100% {color: #FF52AE;}
-}
-
-.navbarLinks a:link {
-    color: royalblue;
-}
-
-.navbarLinks a:visited {
-    color: royalblue;
-}
-
-.navbarLinks a:hover {
-    animation-name: navbarHover;
-    animation-duration: 1s;
-    animation-iteration-count: infinite;
-}
-
-@keyframes navbarHover {
-    0% {color: white;}
-    50% {color: royalblue;}
-    100% {color: white;}
+h1 {
+    text-align: center;
 }
