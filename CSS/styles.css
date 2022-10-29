@@ -68,3 +68,19 @@ section > ul {
     grid-row: 2;
     padding: 20px;
 }
+
+article.galleryPhoto {
+    background-color:#e5e5dc;
+    border: double #db504a 10px;
+    text-align: center;
+    padding: 10px;
+}
+
+ul.gallery{
+    list-style: none;
+    grid-column: 2;
+}
+
+ul.gallery > li {
+    padding: 10px;
+}
