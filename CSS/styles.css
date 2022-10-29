@@ -15,7 +15,7 @@ header {
     grid-row: 1;
 }
 
-ul {
+nav > ul {
     display: flex;
     list-style: none;
     justify-content:space-evenly;
@@ -61,4 +61,10 @@ section {
 .end {
     grid-column: 1 / 4;
     grid-row: 3;
+}
+
+section > ul {
+    grid-column: 1 / 4;
+    grid-row: 2;
+    padding: 20px;
 }
