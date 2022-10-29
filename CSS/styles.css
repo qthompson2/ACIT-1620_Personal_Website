@@ -18,7 +18,7 @@ header {
 nav > ul {
     display: flex;
     list-style: none;
-    justify-content:space-evenly;
+    justify-content:space-around;
 }
 
 header > h1 {
@@ -34,12 +34,14 @@ main {
 footer {
     grid-column: 1 / -1;
     grid-row: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #a6cad4;
 }
 
 footer > h3 {
-    background-color: #a6cad4;
     color: #334259;
-    text-align: center;
 }
 
 section {
@@ -72,7 +74,9 @@ section > ul {
 article.galleryPhoto {
     background-color:#e5e5dc;
     border: double #db504a 10px;
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 10px;
 }
 
