@@ -5,12 +5,14 @@
 body{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 125px;
     background-color: #edddd0;
 }
 
 header {
     background-color: #a6cad4;
-    grid-column: 1 / 4;
+    grid-column: 1 / -1;
+    grid-row: 1;
 }
 
 ul {
@@ -19,6 +21,42 @@ ul {
     justify-content:space-evenly;
 }
 
-h1 {
+header > h1 {
     text-align: center;
+    color: #334259;
+}
+
+main {
+    grid-column: 1 / -1;
+    grid-row: 2;
+}
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: 3;
+}
+
+footer > h3 {
+    background-color: #a6cad4;
+    color: #334259;
+    text-align: center;
+}
+
+section {
+    display: grid;
+}
+
+.portrait {
+    grid-column: 3;
+    grid-row: 2;
+}
+
+.intro {
+    grid-column: 1;
+    grid-row: 2;
+}
+
+.end {
+    grid-column: 1 / 4;
+    grid-row: 3;
 }
