@@ -107,10 +107,6 @@ body.courses {
     flex-direction: column;
 }
 
-.courses footer {
-    color: teal;
-}
-
 .courses header ul {
     flex-direction: column;
     align-items: center;
