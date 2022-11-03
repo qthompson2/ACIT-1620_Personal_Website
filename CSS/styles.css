@@ -124,3 +124,16 @@ section article {
 section article.listEnd {
     border: none;
 }
+
+/*Courses: Computer >600px*/
+@media screen and (min-width:600px) {
+    .courses article {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+    }
+
+    p.courseDate {
+        grid-row: 2;
+    }
+}
