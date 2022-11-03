@@ -88,3 +88,39 @@ ul.gallery{
 ul.gallery > li {
     padding: 10px;
 }
+
+/*Courses: Mobile <600px*/
+body.courses {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+
+.courses header {
+    grid-row: 1 / 2;
+    display: flex;
+    flex-direction: column;
+}
+
+.courses section {
+    display: flex;
+    flex-direction: column;
+}
+
+.courses footer {
+    color: teal;
+}
+
+header ul {
+    flex-direction: column;
+    align-items: center;
+}
+
+section article {
+    padding: 10px;
+    border-bottom: #334259 solid;
+}
+
+section article.listEnd {
+    border: none;
+}
