@@ -27,7 +27,7 @@ do {
 
 for (let c = 0; c < courseList.length; c += 1) {
     if (courseList[c]['code'].indexOf(userInput) > -1) {
-        alert(`${courseList[c]['code']} - ${courseList[c]['name']} is on the list.`);
+        console.log(`${courseList[c]['code']} - ${courseList[c]['name']} is on the list.`);
         index = c
     }
 }
