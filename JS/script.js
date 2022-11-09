@@ -27,7 +27,15 @@ do {
 
 for (let c = 0; c < courseList.length / 2; c += 1) {
     if (courseList[c]['code'].indexOf(userInput) > -1) {
-        alert(`${courseList[c]['code']} ${courseList[c]['name']} is on the list.`);
+        alert(`${courseList[c]['code']} - ${courseList[c]['name']} is on the list.`);
         index = c
     }
+}
+
+if (index === undefined) {
+    courseList.push({
+        'code':userInput,
+        'name':null,
+    })
+    console.log(`Course ${userInput} added successfully.`)
 }
