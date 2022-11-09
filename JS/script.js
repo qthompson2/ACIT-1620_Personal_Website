@@ -25,7 +25,7 @@ do {
     counter += 1
 } while (isNaN(Number(userInput)) || userInput < 1000);
 
-for (let c = 0; c < courseList.length / 2; c += 1) {
+for (let c = 0; c < courseList.length; c += 1) {
     if (courseList[c]['code'].indexOf(userInput) > -1) {
         alert(`${courseList[c]['code']} - ${courseList[c]['name']} is on the list.`);
         index = c
