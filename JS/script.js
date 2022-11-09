@@ -1,6 +1,20 @@
 let counter = 0;
+let index;
 let userInput;
-let courses = {1620:'ACIT', 1116:'COMM', 1515:'ACIT'};
+const courseList = [
+    {
+        'code':'ACIT 1620',
+        'name':'Fundemental Web Technologies',
+    },
+    {
+        'code':'ACIT 1515',
+        'name':'Scripting for IT',
+    },
+    {
+        'code':'COMM 1116',
+        'name':'Business Communications',
+    },
+]
 
 do {
     if (counter === 0) {
@@ -11,8 +25,9 @@ do {
     counter += 1
 } while (isNaN(Number(userInput)) || userInput < 1000);
 
-if (courses[userInput] !== undefined) {
-    alert(`${courses[userInput]}-${userInput} is on the schedule.`)
-} else {
-    alert(`${userInput} is not on the schedule.`)
+for (let c = 0; c < courseList.length / 2; c += 1) {
+    if (courseList[c]['code'].indexOf(userInput) > -1) {
+        alert(`${courseList[c]['code']} ${courseList[c]['name']} is on the list.`);
+        index = c
+    }
 }
